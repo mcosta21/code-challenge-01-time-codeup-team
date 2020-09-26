@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03 - Macaé Tech Code Challenge</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/img/logo.png">
+            <div class="title">
+                <h3>Desafio 03</h3>
+                <h5>Code Challenge</h5>
+            </div>
+        </div>
+        <img src="assets/img/elleva.svg" class="elleva">
+    </nav>
+
+    <main>
+
+        <h4>Exercício 01 <b>(2000 pts)</b></h4>
+        <div class="task">
+            <header>
+                <h4>Calcular valor da pontuação máxima</h4>
+                <p>Você está em um estande de tiro ao alvo em um parque de diversões. Neste estande existe uma prateleira com <b>n</b> alvos. Cada alvo possui uma pontuação associada.</p>
+                <p>Se você derrubar um alvo, você receberá a pontuação equivalente a fórmula: <b>alvo vizinho da esquerda</b> x <b>alvo derrubado</b> x <b>alvo vizinho da direita</b>.</p>
+                                
+                <br>
+                <h5>Condições:</h5>
+                <ul>
+                    <li>Um alvo só poderá ser derrubado uma única vez.</li>
+                    <li>Os alvos não podem ser reposicionados.</li>
+                    <li>Os alvos já derrubados não são considerados como vizinhos na rodada seguinte, logo deve-se se buscar o próximo vizinho.</li>
+                    <li>Quando não houver vizinho em um dos lados do alvo derrubado, deve-se considerar a pontuação 1 para o vizinho inexistente.</li>
+                </ul>
+
+                <br>
+                <p>Você deve implementar a função <b>calcularPontuacaoMaxima</b> no arquivo <b>exercicio-01.js</b> para que ela calcule corretamente a pontuação máxima que o jogador poderá obter, dado uma lista de alvos.</p>
+                <br>
+                <p>Veja a ilustração abaixo:</p>
+
+                <img class="explicacao" src="assets/img/explicacao.png">
+                <br>
+                <p>Vejamos alguns exemplos abaixo:</p>
+                <br>
+                <div class="result">
+                    <div class="item">
+                        <div class="badge">Entrada:</div>
+                    </div>
+                    <div class="item">
+                        2,1,5
+                    </div>
+                    <div class="item"><div class="badge">Saída:</div></div>
+                    <div class="item">25</div>
+                </div>
+
+                <br>
+                <div class="result">
+                    <div class="item">
+                        <div class="badge">Entrada:</div>
+                    </div>
+                    <div class="item">
+                        2,1,5,8
+                    </div>
+                    <div class="item"><div class="badge">Saída:</div></div>
+                    <div class="item">114</div>
+                </div>
+                <br>
+                <div class="result">
+                    <div class="item">
+                        <div class="badge">Entrada:</div>
+                    </div>
+                    <div class="item">
+                        1,1,1,1
+                    </div>
+                    <div class="item"><div class="badge">Saída:</div></div>
+                    <div class="item">4</div>
+                </div>
+            </header>
+            <section>
+
+             
+ 
+                <p>Entrada:</p>
+                <div class="input">
+                    <input id="entrada-exercicio-1" type="text" value="">
+                    <button id="verificar-exercicio-1">Verificar</button>
+                </div>
+                <p>Saída:</p>
+                <div class="output" id="saida-exercicio-1"></div>
+            </section>
+
+          
+
+        </div>
+
+    </main>
+
+    <script  src="exercicio-01.js"></script>
+    <script  src="assets/js/script.js"></script>
+</body>
+</html>
