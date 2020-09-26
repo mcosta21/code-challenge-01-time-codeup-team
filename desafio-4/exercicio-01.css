@@ -3,5 +3,12 @@
  */
 
 #exercicio-01 {
-   
+    flex-direction: row;
 }
+
+#exercicio-01 word letter:nth-child(1) { order: 5; }
+#exercicio-01 word letter:nth-child(2) { order: 4; }
+#exercicio-01 word letter:nth-child(3) { order: 1; }
+#exercicio-01 word letter:nth-child(4) { order: 3; }
+#exercicio-01 word letter:nth-child(5) { order: 2; }
+#exercicio-01 word letter:nth-child(6) { order: 6; }

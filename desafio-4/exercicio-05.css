@@ -3,5 +3,17 @@
  */
 
 #exercicio-05 {
-   
+    flex-direction: row;
 }
+
+#exercicio-05 word letter:nth-child(1) { order: 2; }
+#exercicio-05 word letter:nth-child(2) { order: 6; }
+#exercicio-05 word letter:nth-child(3) { order: 8; display: none}
+#exercicio-05 word letter:nth-child(4) { order: 3; }
+#exercicio-05 word letter:nth-child(5) { order: 1; }
+#exercicio-05 word letter:nth-child(6) { order: 7; }
+#exercicio-05 word letter:nth-child(7) { order: 9; display: none}
+#exercicio-05 word letter:nth-child(8) { order: 10; display: none}
+#exercicio-05 word letter:nth-child(9) { order: 5; }
+#exercicio-05 word letter:nth-child(10) { order: 4; }
+
