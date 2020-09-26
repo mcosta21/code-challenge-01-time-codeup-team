@@ -1,0 +1,20 @@
+COLOQUE O NOME DO SEU TIME AQUI E DEPOIS ENVIE PARA O SERVIDOR!!!
+
+Lembre dos comandos:
+
+clonar o repositório
+git clone url-do-repositorio
+
+pegar as atualizações do servidor: 
+git pull
+
+registrar as alterações:
+git add *
+
+
+fazer commit das alterações:
+git commit -m "descrição da alteração"
+
+
+enviar alterações para o servidor:
+git push
