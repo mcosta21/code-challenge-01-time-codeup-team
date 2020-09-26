@@ -13,10 +13,36 @@
     <style>
         /* ESCREVA SEU CÓDIGO CSS AQUI */
 
-        #exercicio-01 div {
+       #exercicio-01 section {
+            background-color: #fdc82f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background-color: #004165;
+            width: 240px;
+            height: 130px;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+        }
+        .brick {
+            background-color: #006298;
+            width: 240px;
+            height: 110px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .middle {
+            background-color: #004165;
+            height: 40px;
             width: 150px;
-            height: 150px;
-            background: #432d7c;
+            border-radius: 20px;
+            top: 50%;
         }
 
         #exercicio-02 div {
@@ -30,7 +56,7 @@
             height: 290px;
             display: flex;
         }
-        
+
         #exercicio-03 div:first-child {
             width: 164px;
             height: 164px;
@@ -136,10 +162,13 @@
             <article id="exercicio-01">
 
                 <!-- ESCREVA SEU CÓDIGO HTML DO EXERCÍCIO 1 AQUI -->
-                <div>
-
-                </div>
-
+                <section>
+                    <div class = 'container'>
+                        <div class = "brick">
+                            <div class = 'middle'></div>
+                        </div>
+                    </div>
+                </section>
             </article>
 
             <aside>
