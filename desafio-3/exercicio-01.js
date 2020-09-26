@@ -40,9 +40,6 @@ function calcularPontuacaoMaxima(alvos) {
       }
       
     } 
-
-    console.log(arrayTemp);
-
    
   }
 
