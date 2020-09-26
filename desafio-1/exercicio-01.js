@@ -12,12 +12,8 @@ function calcularAQuantidadeDeVogais(texto) {
   for(let i = 0; i < inputValue.length; i++){
     let letter = inputValue[i];
     if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
-      length++
+      length++;
 
   }
-
-  console.log(inputValue, length);
-  //TODO: Implemente sua lógica aqui
-  
   return length;
 }
