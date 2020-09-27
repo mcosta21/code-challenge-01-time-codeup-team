@@ -10,8 +10,14 @@ Jogador.prototype = {
     constructor: Jogador,
     x: 0,
     y: 0,
-    estado: {},
+    estado: [],
     escolherMovimento : function(movimentosPossiveis) {
+        
+        let coord = { x:this.x, y: this.y };
+        this.estado = coord;
+        Jogador.prototype.estado.push(this.estado);
+        
+       
 
         // Implementar aqui o algoritmo.
 
@@ -34,7 +40,6 @@ Jogador.prototype = {
         // o jogador não sairá do lugar e uma mensagem 'Movimentação escolhida é inválida!' será 
         // escrita no console do navegador.
 
-
         // DIVIRTAM-SE!!!
 
         // Sorteia um número de 0 ao tamanho do array menos 1.
@@ -42,7 +47,6 @@ Jogador.prototype = {
 
         // Pega o valor existente na posição sorteada.
         var movimentacao = movimentosPossiveis[index];
-
         // retorna a movimentação que foi sorteada.
         return movimentacao;
     } 
