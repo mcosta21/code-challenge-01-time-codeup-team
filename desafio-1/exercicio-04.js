@@ -7,28 +7,22 @@
  * @param vetor: vetor de números;
  * @return: Vetor com os números pares na frente e os números ímpares posteriormente;
  */
-function moverNumerosParesParaAFrenteDoVetor(vetor) {
-  let inputValue = document.getElementById('entrada-exercicio-4').value
-  
-  let array = inputValue.split(",");
 
-  return sortArray(array);
+function readArray() {
+  let inputValue = document.getElementById('entrada-exercicio-4').value
+  let array = vetor.split(",");
+  return moverNumerosParesParaAFrenteDoVetor(array);
 }
 
-function sortArray(array){    
-  let arrayLength = array.length;
-  for(let i = 0; i < arrayLength; i++){
+function moverNumerosParesParaAFrenteDoVetor(vetor) {
+  let length = vetor.length
+  let evenArray = []
+  let oddArray = []
 
-      for(let j = 0; j < arrayLength; j++){
-
-          if(array[j] > array[i+1]){
-              let valueTemp = array[j];
-              array[j] = array[j+1];
-              array[j+1] = valueTemp;
-          }
-
-      }
-
+  for(i = 0; i < length; i++) {
+    vetor[i] % 2 === 0? evenArray.push(vetor[i]) : oddArray.push(vetor[i])
   }
-  return array;
+
+  let sortedArray = evenArray.concat(oddArray)
+  return sortedArray;
 }
