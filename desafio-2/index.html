@@ -13,11 +13,13 @@
     <style>
         /* ESCREVA SEU CÓDIGO CSS AQUI */
 
-       #exercicio-01 section {
+        .area {
             background-color: #fdc82f;
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100%;
+            height: 290px;
         }
         .container {
             background-color: #004165;
@@ -25,7 +27,6 @@
             height: 130px;
             border-radius: 20px;
             position: absolute;
-            top: 50%;
         }
         .brick {
             background-color: #006298;
@@ -42,7 +43,6 @@
             height: 40px;
             width: 150px;
             border-radius: 20px;
-            top: 50%;
         }
 
         #exercicio-02 div {
@@ -58,14 +58,16 @@
             margin: auto;
             width: 100%;
             height: 290px;
-            background: #6592CF; }
+            background: #6592CF; 
+        }
 
         #exercicio-02 div.um{
             width: 264px;
             height: 130px;
             background: #243D83;
             display: flex;
-            justify-content: center; }
+            justify-content: center; 
+        }
 
         #exercicio-02 div.dois {
             width: 200px;
@@ -73,14 +75,29 @@
             border-radius: 100%;
             background: #6592CF;
             position: relative;
-    top: -30px; }
+            top: -30px; 
+            display: flex;
+            justify-content: center; 
+        }
 
-        #exercicio-02 .circulo {
-        height: 60px;
-        width: 60px;
-        background-color:  #FDC82F;
-        border-radius: 50%;
-        display: inline-block;
+        #exercicio-02 div.tres {
+            width : 130px;
+            height: 130px;
+            border-radius: 100%;
+            background: #243d83;
+            position: relative;
+            top: 30px;
+            display: flex;
+            justify-content: center;    
+        }
+
+        #exercicio-02 div.quatro {
+            width : 60px;
+            height: 60px;
+            border-radius: 100%;
+            background: #fdc82f;
+            position: relative;
+            top: 35px;
         }
 
         #exercicio-03 section {
@@ -194,13 +211,13 @@
             <article id="exercicio-01">
 
                 <!-- ESCREVA SEU CÓDIGO HTML DO EXERCÍCIO 1 AQUI -->
-                <section>
+                <div class = 'area'>
                     <div class= 'container'>
                         <div class = "brick">
                             <div class = 'middle'></div>
                         </div>
                     </div>
-                </section>
+                </div class = 'area'>
             </article>
 
             <aside>
@@ -225,7 +242,11 @@
                 
                 <div class="corpo">
                     <div class="um">
-                        <div class="dois"></div>
+                        <div class="dois">
+                            <div class="tres">
+                                <div class="quatro"></div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
